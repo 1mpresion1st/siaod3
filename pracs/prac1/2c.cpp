@@ -15,10 +15,14 @@ void sortWithBitArray(const std::vector<unsigned char>& bitArray, std::vector<in
 }
 
 int main() {
-    std::vector<int> numbers; // Вектор для хранения введенных чисел
-    std::cout << "Введите не более 64 чисел (от 0 до 63): ";
+    int count;
+    std::cout << "Введите размер массива (не больше 64): ";
+    std::cin >> count;
 
-    for (int i = 0; i < 64; ++i) {
+    std::vector<int> numbers; // Вектор для хранения введенных чисел
+    std::cout << "Введите массив (от 0 до 63): ";
+
+    for (int i = 0; i < count; ++i) {
         int num;
         std::cin >> num;
         if (num < 0 || num > 63) {
