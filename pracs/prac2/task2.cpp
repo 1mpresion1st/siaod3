@@ -1,7 +1,10 @@
 #include <iostream>
 #include <fstream>
+#include <windows.h>
+
 
 int main(int argc, char **argv) {
+    SetConsoleOutputCP(CP_UTF8);
     // Выводим первый аргумент командной строки (путь к файлу) на экран.
     std::cout << argv[1] << std::endl;
 
