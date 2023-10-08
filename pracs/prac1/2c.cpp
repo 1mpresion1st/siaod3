@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-//32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31
 
 // Функция для сортировки чисел с использованием битового массива
 void sortWithBitArray(const std::vector<unsigned char>& bitArray, std::vector<int>& sortedNumbers) {
@@ -15,10 +14,14 @@ void sortWithBitArray(const std::vector<unsigned char>& bitArray, std::vector<in
 }
 
 int main() {
-    std::vector<int> numbers; // Вектор для хранения введенных чисел
-    std::cout << "Введите не более 64 чисел (от 0 до 63): ";
+    int count;
+    std::cout << "Введите размер массива (не больше 64): ";
+    std::cin >> count;
 
-    for (int i = 0; i < 64; ++i) {
+    std::vector<int> numbers; // Вектор для хранения введенных чисел
+    std::cout << "Введите массив (от 0 до 63): ";
+
+    for (int i = 0; i < count; ++i) {
         int num;
         std::cin >> num;
         if (num < 0 || num > 63) {

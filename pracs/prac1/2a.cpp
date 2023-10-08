@@ -12,10 +12,13 @@ void sortWithBitArray(unsigned char bitArray, std::vector<int>& sortedNumbers) {
 }
 
 int main() {
+    int count;
+    std::cout << "Введите размер массива (не больше 8): ";
+    std::cin >> count;
     std::vector<int> numbers; // Вектор для хранения введенных чисел
-    std::cout << "Введите не более 8 чисел (от 0 до 7): ";
+    std::cout << "Введите значения массива (от 0 до 7): ";
 
-    for (int i = 0; i < 8; ++i) {
+    for (int i = 0; i < count; ++i) {
         int num;
         std::cin >> num;
         if (num < 0 || num > 7) {
