@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-    unsigned int x = 25;
+        unsigned int x = 25;
     const int n = sizeof(int) * 8; // Количество разрядов в числе типа int (обычно 32)
     unsigned maska = (1 << (n - 1)); // Устанавливаем 1 в старшем бите 32-разрядной сетки
 
